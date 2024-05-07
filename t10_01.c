@@ -12,7 +12,7 @@ int main(int _argc, char **_argv)
 {
     int total_dorms = 0;
     int total_students = 0;
-    struct dorm_t dorms[5] ;
+    struct dorm_t dorms[20] ;
     struct student_t students[20];
     FILE *file;
     char buffer[200];
