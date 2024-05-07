@@ -16,10 +16,12 @@ struct student_t
     char name[40];
     char year[5];
     enum gender_t gender;
-    struct dorm_t *dorm;
+    struct dorm_t *dorm; 
 };
 
 struct student_t create_student(char *_id, char *_name, char *_year,
                                 enum gender_t _gender);
-
+void print_student_detail(struct student_t student);
+void print_student(struct student_t student);
+void assign_student(struct student_t *students, struct dorm_t *dorm , char *_id, char *_dorm_name);
 #endif
