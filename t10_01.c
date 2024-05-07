@@ -121,7 +121,7 @@ int main(int _argc, char **_argv)
                 dorms[total_dorms]=create_dorm(name, capacity, GENDER_FEMALE);
                 total_dorms++;
             }    
-        } else if (strcmp(token,"student-assign")==0){
+        } else if (strcmp(token,"assign-student")==0){
             token = strtok(NULL, "#");
             char *_id = token;
             token = strtok(NULL, "#");

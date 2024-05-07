@@ -52,4 +52,9 @@ void print_student(struct student_t student){
 }
 
 void assign_student(struct student_t *students, struct dorm_t *dorm , char *_id, char *_dorm_name){
+    if (dorm->gender==students->gender && dorm->capacity > dorm->residents_num){
+        students->dorm = dorm;
+        dorm->residents_num++;
+    }
+
 }
