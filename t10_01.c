@@ -101,7 +101,7 @@ int main(int _argc, char **_argv)
             token = strtok(NULL, "#");
             char *year = token;
             token = strtok(NULL, "#");
-            if (strcmp(token,"male\n")==0){
+            if (strcmp(token,"male")==0){
                 students[total_students]=create_student(id, name, year,GENDER_MALE);
                 total_students++;
             } else {
@@ -114,7 +114,7 @@ int main(int _argc, char **_argv)
             token = strtok(NULL, "#");
             short unsigned capacity = atoi(token);
             token = strtok(NULL, "#");
-            if (strcmp(token,"male\n")==0){
+            if (strcmp(token,"male")==0){
                 dorms[total_dorms]=create_dorm(name, capacity,GENDER_MALE);
                 total_dorms++;
             } else {
