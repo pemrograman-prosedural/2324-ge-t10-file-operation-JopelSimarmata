@@ -1,1 +1,1 @@
-enum to striing
+enum to striingn
